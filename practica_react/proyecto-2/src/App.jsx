@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Componente from '../componentes/Componente'
 import Propiedades from '../componentes/Propiedades'
+import Estado from '../componentes/Estado'
 import './App.css'
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
         funcion = {(num) => num*num}
         elementoReact = {<i>Esto es un elemento React</i>}
         componenteReact = {<Componente msg="Soy un componente pasado como prop"/>} />
+        <hr />
+        <Estado/>
       </section>
     </>
   )
