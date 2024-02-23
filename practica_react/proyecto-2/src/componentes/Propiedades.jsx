@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from "prop-types"
+import propTypes from "prop-types"
 
 function Propiedades(props) {
   return (
@@ -23,8 +23,8 @@ Propiedades.defaultProps = {
     porDefecto : "Las Props"
 }
 
-Propiedades.PropTypes = {
-    numero : PropTypes.number.isRequired //Significa que a la propiedad numero solicita un valor que sea tipo "number" y que no este vacia "isRequired"
+Propiedades.propTypes = {
+    numero : propTypes.number.isRequired //Significa que a la propiedad numero solicita un valor que sea tipo "number" y que no este vacia "isRequired"
 }
 
 

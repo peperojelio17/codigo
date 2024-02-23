@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Componente from '../componentes/Componente'
-import Propiedades from '../componentes/Propiedades'
-import Estado from '../componentes/Estado'
-import RenderizadoCondicional from '../componentes/RenderizadoCondicional'
+import Componente from './componentes/Componente'
+import Propiedades from './componentes/Propiedades'
+import Estado from './componentes/Estado'
+import RenderizadoCondicional from './componentes/RenderizadoCondicional'
 import './App.css'
+import RenderizadoElementos from './componentes/RenderizadoElementos'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -22,9 +23,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button> */}
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -45,9 +46,11 @@ function App() {
         elementoReact = {<i>Esto es un elemento React</i>}
         componenteReact = {<Componente msg="Soy un componente pasado como prop"/>} />
         <hr />
-        <Estado/>
-        <hr />
+        {/* <Estado/>
+        <hr /> */}
         <RenderizadoCondicional/>
+        <hr />
+        <RenderizadoElementos/>
       </section>
     </>
   )

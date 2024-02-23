@@ -22,14 +22,14 @@ export default class RenderizadoCondicional extends Component{
     constructor(props){
         super(props);
         this.state = {
-            session: true 
+            session: false
         }
     }
 render() {
     return (
          <div>
             <h2>Renderizado Condicional</h2>
-            {this.state.session ? <Login/> : }
+            {this.state.session ? <Login/> : <Logout/>}
          </div>
     );
 }
